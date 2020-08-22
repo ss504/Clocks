@@ -1,0 +1,115 @@
+.header{
+    background-image: url("../../src/img/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #c9a2f0;
+}
+.header__wrapper{
+     max-width: 1210px;
+     margin: 0 auto;
+     padding: 70px 15px 0;
+ }
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+  width: 156px;
+  height: 38px;
+  object-fit: contain;
+  object-position: center center;
+}
+.header__form{
+  display: flex;
+  justify-content: flex-end;
+}
+.header__search{
+  position: relative;
+}
+.header__search::before{
+  content: "";
+  width: 26px;
+  height: 27px;
+  position: absolute;
+  background-image: url("../../src/img/zoom.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px 26px;
+  top: calc(50% - 13px);
+  left: 16%;
+}
+.header__input{
+  @include input-placeholder{
+    font-family: 'Open Sans', sans-serif;
+    color: $text-color;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  border: none;
+  padding: 15px 18px 19px 73px;
+  background-color: #ffffff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-align: left;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.header__list{
+  padding: 17px 65px 17px 24px;
+  background-color: #ffffff;
+  text-align: left;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+}
+.header__list::before{
+  content: "\f107";
+  color: $text-color;
+  padding-left: 20px;
+  font-size: 26px;
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 18%;
+  font-family: 'FontAwesome';
+}
+.header__block{
+  padding-top: 188px;
+  padding-left: 56%;
+  padding-bottom: 375px;
+}
+.header__title{
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 115px;
+  font-weight: 600;
+  line-height: 120px;
+  color: $text-color;
+  letter-spacing: -4px;
+  span{
+    color: #ffffff;
+    display: block;
+  }
+}
+.header__subtitle{
+  font-family: 'RobotoMedium', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  padding-left: 12px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #fbf934;
+  letter-spacing: 1px;
+  padding-bottom: 87px;
+  span{
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,95 @@
+.catalog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 0 85px;
+}
+.catalog__review{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+.catalog__comment--img{
+  max-width: 25px;
+  max-height: 25px;
+  object-fit: contain;
+  object-position: center  center;
+}
+.catalog__comment--number{
+  font-family: 'Open-Sans', serif;
+  font-size: 14px;
+  color: #bbbbbb;
+  padding-left: 5px;
+}
+.catalog__item{
+  flex: 0 0 29%;
+  min-height: 489px;
+  width: 100%;
+  margin: 0 10px;
+  @media (max-width: 1180px){
+  flex: 0 0 45%;
+  }
+}
+
+.catalog__thumb {
+  position: relative;
+  width: 100%;
+  padding: 45px 20px 0px 20px;
+  transition: 0.3s ease;
+  &:hover {
+    box-shadow: 0px 5px 47.5px 2.5px rgba(221, 223, 224, 0.75);
+    .catalog__review{
+      display: flex;
+      justify-content: space-between;
+    }
+    .catalog__price{
+      color: #8c84f9;
+    }
+    .button--violet{
+      opacity: 1;
+    }
+  }
+}
+.catalog__img-inner{
+  text-align: center;
+  min-height: 260px;
+}
+.catalog__image{
+  max-height: 250px;
+  max-width: 315px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.catalog__title{
+  font-size: 18px;
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  color: #777777;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding-bottom: 20px;
+  }
+.catalog__price{
+  font-size: 25px;
+  font-family: 'Open Sans', serif;
+  color: #333333;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 90px;
+  }
+.catalog__like{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.catalog__comment{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

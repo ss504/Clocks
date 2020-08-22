@@ -1,0 +1,40 @@
+.brands{
+  padding-bottom: 30px;
+}
+.brands__wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+}
+.brands__item{
+  flex: 0 0 44%;
+}
+.brands__subtitle{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  padding-top: 18px;
+  color: #333333;
+  span{
+    color: #8d83f9;
+  }
+}
+.brands__text{
+  color: #888888;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.18px;
+  padding-top: 23px;
+}
+.brands__img{
+  width: 546px;
+  height: 814px;
+  object-position: center center;
+  object-fit: contain;
+  margin-left: 10px;
+}
