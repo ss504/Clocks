@@ -1,29 +1,28 @@
 .tabs{
-  margin-top: 100px;
-  padding: 40px 100px;
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0px 5px 47.5px 2.5px rgba(239, 239, 240, 0.75);
-  border-radius: 100px;
   list-style-type: none;
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  margin: 5px;
 }
 .tabs__item{
-
+  text-align: center;
 }
 .tabs__link{
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  letter-spacing: 0.5px;
   text-decoration: none;
   color: #777777;
+  font-weight: 600;
   &:hover{
     color: rgb(179, 148, 250);
     text-align: center;
+    letter-spacing: 2px;
+    font-size: 19px;
     text-shadow: 0px 9px 5px rgba(213, 200, 247, 0.75);
   }
-}
-.tabs-content{
-
 }
 .tabs-content__panel{
   display: none;

@@ -157,35 +157,37 @@
 </section>
 <section class="showcase">
     <div class="showcase__wrapper">
-        <h2 class="title">Our Showcase</h2>
-        <ul class="tabs">
-            <li class="tabs__item active">
-                <a href="" class="tabs__link">Fashion</a>
-            </li>
-            <li class="tabs__item">
-                <a href="" class="tabs__link">Furnitures</a>
-            </li>
-            <li class="tabs__item">
-                <a href="" class="tabs__link">Watches</a>
-            </li>
-            <li class="tabs__item">
-                <a href="" class="tabs__link">Mobile</a>
-            </li>
-            <li class="tabs__item">
-                <a href="" class="tabs__link">Cloth</a>
-            </li>
-            <li class="tabs__item">
-                <a href="" class="tabs__link">Toys</a>
-            </li>
-        </ul>
+        <h2 class="title showcase__title">Our Showcase</h2>
+        <div class="showcase__tabs">
+            <ul class="tabs">
+                <li class="tabs__item">
+                    <a href="" class="tabs__link">Fashion</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="" class="tabs__link">Furnitures</a>
+                </li>
+                <li class="tabs__item active">
+                    <a href="" class="tabs__link">Watches</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="" class="tabs__link">Mobile</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="" class="tabs__link">Cloth</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="" class="tabs__link">Toys</a>
+                </li>
+            </ul>
+        </div>
         <div class="tabs-content">
-            <div class="tabs-content__panel active" data-index="0">
+            <div class="tabs-content__panel" data-index="0">
             </div>
             <div class="tabs-content__panel" data-index="1">
             </div>
-            <div class="tabs-content__panel" data-index="2">
-                <div class="catalog">
-                    <div class="catalog__item">
+            <div class="tabs-content__panel active" data-index="2">
+                <div class="catalog catalog--tab">
+                    <div class="catalog__item catalog__item--tab">
                         <div class="catalog__thumb">
                             <div class="catalog__review">
                                 <div class="catalog__like">
@@ -203,8 +205,8 @@
                             <div class="button__wrapper"><button class="button button--violet">Add to Cart</button></div>
                         </div>
                     </div>
-                    <div class="catalog__item">
-                        <div class="catalog__thumb">
+                    <div class="catalog__item catalog__item--tab">
+                        <div class="catalog__thumb ">
                             <div class="catalog__review">
                                 <div class="catalog__like">
                                     <img src="src/img/like.png" alt="Like" class="catalog__comment--img">
@@ -221,7 +223,7 @@
                             <div class="button__wrapper"><button class="button button--violet">Add to Cart</button></div>
                         </div>
                     </div>
-                    <div class="catalog__item">
+                    <div class="catalog__item catalog__item--tab">
                         <div class="catalog__thumb">
                             <div class="catalog__review">
                                 <div class="catalog__like">
@@ -239,7 +241,7 @@
                             <div class="button__wrapper"><button class="button button--violet">Add to Cart</button></div>
                         </div>
                     </div>
-                    <div class="catalog__item">
+                    <div class="catalog__item catalog__item--tab">
                         <div class="catalog__thumb">
                             <div class="catalog__review">
                                 <div class="catalog__like">
@@ -257,7 +259,7 @@
                             <div class="button__wrapper"><button class="button button--violet">Add to Cart</button></div>
                         </div>
                     </div>
-                    <div class="catalog__item">
+                    <div class="catalog__item catalog__item--tab">
                         <div class="catalog__thumb">
                             <div class="catalog__review">
                                 <div class="catalog__like">
@@ -275,7 +277,7 @@
                             <div class="button__wrapper"><button class="button button--violet">Add to Cart</button></div>
                         </div>
                     </div>
-                    <div class="catalog__item">
+                    <div class="catalog__item catalog__item--tab">
                         <div class="catalog__thumb">
                             <div class="catalog__review">
                                 <div class="catalog__like">
@@ -304,6 +306,35 @@
         </div>
     </div>
 </section>
+<section class="newsletter">
+    <h2 class="newsletter__title">Newsletter</h2>
+    <form action="" class="newsletter__form">
+        <input type="email" placeholder="Enter your email address.." class="newsletter__input" size="50">
+        <button type="submit" class="button__newsletter">Submit</button>
+    </form>
+</section>
+<footer class="footer">
+    <h3 class="footer__title">Big Shop</h3>
+    <nav class="footer__menu">
+        <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">Man</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Woman</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Kids</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Bags</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Watches</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Toys</a></li>
+        </ul>
+    </nav>
+    <ul class="social">
+        <li class="social__item"><a href="#" class="social__link social__link--facebook"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--google"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--insta"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--twitter"></a></li>
+    </ul>
+    <div class="copyright">
+        <div class="copyright__text">&copy; Copyright 2017. Big Shop by Victor Themes</div>
+    </div>
+</footer>
 <script src="js/index.js"></script>
 </body>
 </html>
