@@ -10,20 +10,49 @@
      max-width: 1210px;
      margin: 0 auto;
      padding: 53px 15px 0;
+     @media (max-width: 1210px) {
+        max-width: 1140px;
+     }
+    @media (max-width: 1110px) {
+      max-width: 980px;
+    }
+    @media (max-width: 990px) {
+      max-width: 860px;
+      padding: 33px 15px 0;
+    }
+    @media (max-width: 890px) {
+      max-width: 500px;
+    }
+    @media (max-width: 520px) {
+      max-width: 315px;
+    }
  }
 .header__top{
     display: flex;
     justify-content: space-between;
+    @media (max-width: 890px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
 }
 .header__logo{
   width: 156px;
   height: 38px;
   object-fit: contain;
   object-position: center center;
+  @media (max-width: 990px) {
+    width: 100px;
+  }
+  @media (max-width: 890px) {
+    margin-bottom: 20px;
+  }
 }
 .header__form{
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 520px) {
+    justify-content: flex-start;
+  }
 }
 .header__search{
   position: relative;
@@ -36,7 +65,7 @@
   background-image: url("../src/img/zoom.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 25px 26px;
+  background-size: 13px 13px;
   top: calc(50% - 13px);
   left: 16%;
 }
@@ -47,6 +76,10 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
+    @media (max-width: 990px) {
+      font-size: 10px;
+      line-height: 13px;
+    }
   }
   border: none;
   padding: 20px 7px 20px 75px;
@@ -60,12 +93,34 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
+  @media (max-width: 990px) {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 20px 7px 20px 55px;
+  }
 }
 
 .header__block{
   padding-top: 188px;
   padding-left: 56%;
   padding-bottom: 375px;
+  @media (max-width: 1210px) {
+    padding-left: 50%;
+  }
+  @media (max-width: 1110px) {
+    padding-left: 47%;
+    padding-top: 60px;
+    padding-bottom: 200px;
+  }
+  @media (max-width: 990px) {
+    padding-left: 56%;
+    padding-top: 40px;
+    padding-bottom: 150px;
+  }
+  @media (max-width: 520px) {
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }
 .header__title{
   font-family: 'RobotoBold', sans-serif;
@@ -77,6 +132,13 @@
   span{
     color: #ffffff;
     display: block;
+  }
+  @media (max-width: 1210px) {
+    font-size: 90px;
+  }
+  @media (max-width: 990px) {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 .header__subtitle{
@@ -91,5 +153,11 @@
   padding-bottom: 87px;
   span{
     color: #ffffff;
+  }
+  @media (max-width: 990px) {
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-left: 12px;
+    line-height: 40px;
   }
 }

@@ -1,4 +1,9 @@
+.showcase{
+  @media (max-width: 990px) {
+    display: none;
+  }
 
+}
 .showcase__wrapper{
   max-width: 1380px;
   margin: 0 auto;
@@ -7,14 +12,30 @@
   padding: 100px 75px 55px 75px;
   position: relative;
   z-index: 100;
+  @media (max-width: 1210px) {
+    max-width: 940px;
+  }
+  @media (max-width: 1110px) {
+    max-width: 840px;
+  }
+  @media (max-width: 520px) {
+    max-width: 315px;
+  }
 }
 .showcase__tabs{
   margin: 97px 80px 0;
-  padding: 21px 120px;
   background-color: #ffffff;
   box-shadow: 0px 5px 47.5px 2.5px rgba(239, 239, 240, 0.75);
   border-radius: 100px;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  @media (max-width: 1210px) {
+    padding: 21px 70px;
+  }
+  @media (max-width: 1110px) {
+    margin: 30px 30px 0;
+    padding: 21px 50px;
+  }
+
 }

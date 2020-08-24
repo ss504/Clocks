@@ -12,6 +12,11 @@
   cursor: pointer;
   outline: none;
   width: 175px;
+  @media (max-width: 990px) {
+    font-size: 10px;
+    line-height: 13px;
+    width: 125px;
+  }
 }
 .dropdown__wrapper::before{
   content: "\f107";
@@ -21,6 +26,10 @@
   top: calc(50% - 12px);
   right: 40px;
   font-family: 'FontAwesome';
+  @media (max-width: 990px) {
+    font-size: 13px;
+    top: calc(50% - 7px);
+  }
 }
 .dropdown {
   position: absolute;
@@ -45,6 +54,13 @@
       padding: 10px 10px 10px 17px;
       &:hover{
         background-color: #e5dbf2;
+      }
+      @media (max-width: 990px) {
+        font-size: 10px;
+        line-height: 10px;
+      }
+      @media (max-width: 990px) {
+        padding: 5px 10px 5px 17px;
       }
     }
   }
