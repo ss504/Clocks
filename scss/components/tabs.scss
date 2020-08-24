@@ -5,6 +5,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 27px 125px;
+  @media (max-width: 1210px) {
+    margin: 27px 50px;
+  }
 }
 .tabs__item{
   text-align: center;
