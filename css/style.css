@@ -445,7 +445,6 @@
 .button {
   color: #151515;
   background-color: #fcfcfc;
-  box-shadow: 0 5px 23.75px 1.25px rgba(189, 227, 239, 0.75);
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -461,6 +460,8 @@
       padding: 10px 62px 10px 30px;
       font-size: 16px;
       line-height: 28px; } }
+  .button:hover {
+    box-shadow: 0 5px 23.75px 1.25px rgba(189, 227, 239, 0.75); }
 
 .button--header {
   position: relative; }
@@ -494,14 +495,15 @@
   transition: 0.3s ease;
   background: -moz-linear-gradient(64deg, #8c84f9 0%, #a165f4 100%);
   background: -webkit-linear-gradient(64deg, #8c84f9 0%, #a165f4 100%);
-  background: -ms-linear-gradient(64deg, #8c84f9 0%, #a165f4 100%);
-  box-shadow: 0px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75); }
+  background: -ms-linear-gradient(64deg, #8c84f9 0%, #a165f4 100%); }
   @media (max-width: 990px) {
     .button--violet {
       margin: -17px;
       outline: none;
       cursor: pointer;
       padding: 10px 25px; } }
+  .button--violet:hover {
+    box-shadow: 0px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75); }
 
 .button__newsletter {
   border: none;
